@@ -4,12 +4,12 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui#Qt包含的模块
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets#大于4版本以上,包含widget模块
 
-TARGET = BStation_QT_Learning
-TEMPLATE = app
+TARGET = BStation_QT_Learning#目标,生成的.exe程序的名称
+TEMPLATE = app#模板,应用程序模板 APP:Application
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -24,11 +24,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
 
-SOURCES += \
+SOURCES += \    #源文件
         main.cpp \
         mywidget.cpp
 
-HEADERS += \
+HEADERS += \    #头文件
         mywidget.h
 
 # Default rules for deployment.
